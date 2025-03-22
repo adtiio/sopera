@@ -22,7 +22,7 @@ public class YoutubeService {
     private static final JsonFactory JSON_FACTORY=new GsonFactory();
     private static final HttpTransport httpTransport=new NetHttpTransport();
 
-    private final String apiKey="AIzaSyDZVr_QZGMQTsCUag_3Bslukduc5YZ4fvc";
+    private final String apiKey="api_key";
 
     public YouTube getServices(){
         return new YouTube.Builder(httpTransport, JSON_FACTORY, request->{}).setApplicationName(APPLICATION_NAME).build();
